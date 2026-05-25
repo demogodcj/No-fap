@@ -1,0 +1,37 @@
+body {
+    background-color: #04060b;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.app-shell {
+    max-width: 460px;
+}
+
+.glass-card {
+    background: rgba(10, 15, 28, 0.7);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.neon-glow {
+    box-shadow: 0 0 40px rgba(99, 102, 241, 0.08);
+}
+
+.no-scroll::-webkit-scrollbar { 
+    display: none; 
+}
+
+.no-scroll { 
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+/* Force hardware-accelerated rendering transformations */
+.accelerated-layer {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    will-change: transform, opacity;
+}
